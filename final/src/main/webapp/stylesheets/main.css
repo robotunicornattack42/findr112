@@ -1,13 +1,41 @@
 header {
-    h1 {
-        font-size: 34pt;    
-        font-family: Verdana, Helvetica, serif;
-        color: white;
-    }
+	font-family: Verdana, Helvetica, serif;
+	color: #00356B;
+	background-color: #FFFFFF;
+    	h1
+	{
+		font-size: 34pt;
+		text-align: center;
+	}
+	
 }
-
+	
 body {
     font-family: Verdana, Helvetica, serif;
     color: #FFFFFF;
     background-color: #00356B;
+	h2
+	{
+		font-size: 24pt;            
+	}
 }
+
+a:link  {
+		
+		  color:#476849;
+		  text-decoration:none;
+		
+		   }
+		   a:visited  {
+		
+		  color:#BB4444;
+		   text-decoration:none;
+		
+		   }
+		   a:hover  {
+		
+		  color:#cdd4ab;
+		  text-decoration:none;
+	
+	}
+		   
