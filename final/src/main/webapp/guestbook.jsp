@@ -19,6 +19,10 @@
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
 </head>
 
+<header>
+<h1>Welcome to Yale Lost and Found!</h1>
+</header>
+
 <body>
 
 <%
@@ -38,9 +42,9 @@
 <%
     } else {
 %>
-<p>Hello!
+<p><h2>Hello!
     <a href="<%= userService.createLoginURL(request.getRequestURI()) %>">Sign in</a>
-    to include your name with greetings you post.</p>
+    with your Yale e-mail. Then you can post your lost or found item!</h2></p>
 <%
     }
 %>
@@ -62,7 +66,7 @@
 
     if (greetings.isEmpty()) {
 %>
-<p>Guestbook '${fn:escapeXml(guestbookName)}' has no messages.</p>
+<p>'${fn:escapeXml(guestbookName)}' has no lost or found items.</p>
 <%
     } else {
 %>
@@ -73,7 +77,7 @@
             pageContext.setAttribute("greeting_content", greeting.content);
             String author;
             if (greeting.author_email == null) {
-                author = "An anonymous person";
+                author = "Anon";
             } else {
                 author = greeting.author_email;
                 String author_id = greeting.author_id;
